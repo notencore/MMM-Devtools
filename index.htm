@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
+<body>
 <script>
 function replaceStuff() {
+ console.log("Aye aye captain!")
  var map = document.getElementById("map").value;
  map.replace(/\[x\]/ig, "[font color=\"grey\"][X][/font]");
  map.replace(/\[H\]/g, "[font color=\"red\"][H][/font]");
@@ -13,4 +15,5 @@ function replaceStuff() {
 <textarea id="map" rows="16" cols="64">Paste map here</textarea>
 <button type="button" onclick="replaceStuff()">Fix the map</button>
 
+</body>
 </html>
