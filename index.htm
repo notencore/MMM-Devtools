@@ -6,10 +6,11 @@ function replaceStuff() {
  map.replace(/\[x\]/ig, "[font color=\"grey\"][X][/font]");
  map.replace(/\[H\]/g, "[font color=\"red\"][H][/font]");
  map.replace(/\[h\]/g, "[font color=\"red\"][h][/font]");
+ document.getElementById("map").value = map;
 }
 </script>
 
 <textarea id="map" rows="16" cols="64">Paste map here</textarea>
-<button type="button" onclick="replaceStuff()">Fix the map</button>
+<input type="button" onclick="replaceStuff()">Fix the map</button>
 
 </html>
