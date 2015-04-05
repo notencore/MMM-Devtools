@@ -10,11 +10,14 @@ function replaceStuff() {
  map = map.replace(/\[h\]/g, "[font color=\"red\"][h][/font]");
  map = map.replace(/\[\?\]/g, "[font color=\"purple\"][?][/font]");
  //Folks
- map = map.replace(/\[C|Cherish|Feint\]/g, "[font color=\"885599\"][O][/font]"); //Cherish
+ map = map.replace(/\[C\]/g, "[font color=\"885599\"][O][/font]"); //
  map = map.replace(/\[(J|James(on)*\]/g, "[font color=\"limegreen\"][O][/font]"); //Jameson
- map = map.replace(/\[T|Tenma|Ciel\]/g, "[font color=\"rose\"][O][/font]"); //Tenma
- map = map.replace(/\[SH|Sha(keem)*\]/g, "[font color=\"orange\"][O][/font]"); //Shakeem
- map = map.replace(/\[XN|Xen(neth)*\]/g, "[font color=\"cyan\"][O][/font]"); //Xenneth
+ map = map.replace(/\[T\]/g, "[font color=\"rose\"][O][/font]"); //
+ map = map.replace(/\[SH\]/g, "[font color=\"orange\"][O][/font]");//
+ map = map.replace(/\[XN\]/g, "[font color=\"cyan\"][O][/font]"); //
+ map = map.replace(/\[SA\]/g, "[font color=\"e67319\"][O][/font]"]); // Sara
+ map = map.replace(/\[OR\]/g, "[font color=\"3a00da\"][O][/font]"]); // Orph
+ map = map.replace(/\[M\]/g, "[font color=\"gold\"][M][/font]"]); // Metool
  //Make the map courier new
  map = "[font face=\"courier new\"]" + map + "[/font]"
  document.getElementById("map").value = map;
