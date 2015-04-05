@@ -32,9 +32,9 @@ function replaceStuff() {
  map = map.replace(/(\[sa(ra)?|nub\])/ig, "[font color=\"e67319\"][O][/font]"); // Sara
  map = map.replace(/(\[ha(do)?\])/ig, "[font color=\"gold\"][O][/font]"); // Hado
  //NPCS
- map = map.replace(/\[te(nma)?\]/g, "[font color=\"rose\"][O][/font]"); //Tenma
- map = map.replace(/\[or(ph)?\]/g, "[font color=\"3a00da\"][O][/font]"); // Orph
- map = map.replace(/\[oc(tavius)?\]/g, "[font color=\"79C4C3\"][O][/font]"); //Octavius
+ map = map.replace(/(\[te(nma)?\])/g, "[font color=\"rose\"][O][/font]"); //Tenma
+ map = map.replace(/(\[or(ph)?\])/g, "[font color=\"3a00da\"][O][/font]"); // Orph
+ map = map.replace(/(\[oc(tavius)?\])/g, "[font color=\"79C4C3\"][O][/font]"); //Octavius
  //Make the map courier new
  map = "[font face=\"courier new\"]" + map + "[/font]"
  document.getElementById("map").value = map;
