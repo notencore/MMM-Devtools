@@ -1,4 +1,13 @@
 <!DOCTYPE html>
 <html>
-<textarea rows="16" cols="64">Paste map here</textarea>
+<textarea id="map" rows="16" cols="64">Paste map here</textarea>
+<button type="button" value="Fix The Map"/>
+<script>
+function replaceStuff() {
+ var map = document.getElementById("map").value;
+ map.replace(/\[x\]/ig, "[font color=\"grey\"][X][/font]");
+ map.replace(/\[H\]/g, "[font color=\"red\"][H][/font]");
+ map.replace(/\[h\]/g, "[font color=\"red\"][h][/font]");
+}
+</script>
 </html>
