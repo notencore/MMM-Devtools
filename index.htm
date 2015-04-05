@@ -10,11 +10,12 @@ function replaceStuff() {
  map = map.replace(/\[h\]/g, "[font color=\"red\"][h][/font]");
  map = map.replace(/\[\?\]/g, "[font color=\"purple\"][?][/font]");
  //Folks
- map = map.replace(/\[C\]/g, "[font color=\"885599\"][O][/font]");
- map = map.replace(/\[J\]/g, "[font color=\"limegreen\"][O][/font]");
- map = map.replace(/\[T\]/g, "[font color=\"rose\"][O][/font]");
- map = map.replace(/\[SH\]/g, "[font color=\"orange\"][O][/font]");
- map = map.replace(/\[XN\]/g, "[font color=\"cyan\"][O][/font]");
+ map = map.replace(/\[C\]/g, "[font color=\"885599\"][O][/font]"); //
+ map = map.replace(/\[(J|James(on)*\]/g, "[font color=\"limegreen\"][O][/font]"); //Jameson
+ map = map.replace(/\[T\]/g, "[font color=\"rose\"][O][/font]"); //
+ map = map.replace(/\[SH\]/g, "[font color=\"orange\"][O][/font]");//
+ map = map.replace(/\[XN\]/g, "[font color=\"cyan\"][O][/font]"); //
+ //Make the map courier new
  map = "[font face=\"courier new\"]" + map + "[/font]"
  document.getElementById("map").value = map;
 }
