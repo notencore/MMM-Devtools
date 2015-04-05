@@ -18,7 +18,7 @@ function replaceStuff() {
  map = map.replace(/\[H\]/g, "[font color=\"red\"][H][/font]"); // Very Armed, Very Dangerous Hostile
  map = map.replace(/\[h\]/g, "[font color=\"red\"][h][/font]"); // Unconscious Hostile
  map = map.replace(/\[\?\]/g, "[font color=\"purple\"][?][/font]"); // Unknown
- map = map.replace(/\[WD\]/g, "[font color=\"white\"][=][/font]"); // White Door
+ map = map.replace(/\[WD|=|D\]/g, "[font color=\"white\"][=][/font]"); // White Door
  map = map.replace(/\[GD\]/g, "[font color=\"limegreen\"][=][/font]"); // Green Door
  map = map.replace(/\[BD\]/g, "[font color=\"blue\"][=][/font]"); // Blue Door
  map = map.replace(/\[BP\]/g, "[font color=\"blue\"][N][/font]"); // Blue Panel
