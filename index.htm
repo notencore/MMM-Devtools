@@ -18,11 +18,11 @@ function replaceStuff() {
  map = map.replace(/\[H\]/g, "[font color=\"red\"][H][/font]"); // Very Armed, Very Dangerous Hostile
  map = map.replace(/\[h\]/g, "[font color=\"red\"][h][/font]"); // Unconscious Hostile
  map = map.replace(/\[\?\]/g, "[font color=\"purple\"][?][/font]"); // Unknown
- map = map.replace(/\[(GD)|(G=)\]/ig, "[font color=\"limegreen\"][=][/font]"); // Green Door
- map = map.replace(/\[(BD)|(B=)\]/ig, "[font color=\"blue\"][=][/font]"); // Blue Door
- map = map.replace(/\[(BP)|(BN)\]/ig, "[font color=\"blue\"][N][/font]"); // Blue Panel
+ map = map.replace(/\[(GD|G=)\]/ig, "[font color=\"limegreen\"][=][/font]"); // Green Door
+ map = map.replace(/\[(BD|B=)\]/ig, "[font color=\"blue\"][=][/font]"); // Blue Door
+ map = map.replace(/\[(BP|BN)\]/ig, "[font color=\"blue\"][N][/font]"); // Blue Panel
  map = map.replace(/\[M(et(ool)?)?\]/ig, "[font color=\"gold\"][M][/font]"); // Metool
- map = map.replace(/\[(W)|(UMet(ool)?)\]/ig, "[font color=\"red\"][W][/font]"); // Upside Down Metool
+ map = map.replace(/\[(W|UMet(ool)?)\]/ig, "[font color=\"red\"][W][/font]"); // Upside Down Metool
  //Folks
  map = map.replace(/\[(ch(erish)?)|(fe(int)?)\]/ig, "[font color=\"885599\"][O][/font]"); //Cherish
  map = map.replace(/\[ja(mes(on)?)?\]/ig, "[font color=\"limegreen\"][O][/font]"); //Jameson
