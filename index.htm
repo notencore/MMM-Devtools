@@ -19,8 +19,8 @@ function replaceStuff() {
  map = map.replace(/\[h\]/g, "[font color=\"red\"][h][/font]"); // Unconscious Hostile
  map = map.replace(/\[\?\]/g, "[font color=\"purple\"][?][/font]"); // Unknown
  map = map.replace(/\[WD|=|D\]/g, "[font color=\"white\"][=][/font]"); // White Door
- map = map.replace(/\[GD\]/g, "[font color=\"limegreen\"][=][/font]"); // Green Door
- map = map.replace(/\[BD\]/g, "[font color=\"blue\"][=][/font]"); // Blue Door
+ map = map.replace(/\[GD|G=\]/g, "[font color=\"limegreen\"][=][/font]"); // Green Door
+ map = map.replace(/\[BD|B=\]/g, "[font color=\"blue\"][=][/font]"); // Blue Door
  map = map.replace(/\[BP\]/g, "[font color=\"blue\"][N][/font]"); // Blue Panel
  map = map.replace(/\[M|Met(ool)?\]/g, "[font color=\"gold\"][M][/font]"); // Metool
  map = map.replace(/\[W|UMet(ool)?\]/g, "[font color=\"red\"][W][/font]"); // Upside Down Metool
