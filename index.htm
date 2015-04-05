@@ -25,16 +25,16 @@ function replaceStuff() {
  map = map.replace(/\[M|Met(ool)?\]/ig, "[font color=\"gold\"][M][/font]"); // Metool
  map = map.replace(/\[W|UMet(ool)?\]/ig, "[font color=\"red\"][W][/font]"); // Upside Down Metool
  //Folks
- map = map.replace(/\[C|F|Cherish|Feint\]/g, "[font color=\"885599\"][O][/font]"); //Cherish
- map = map.replace(/\[J|James(on)?\]/g, "[font color=\"limegreen\"][O][/font]"); //Jameson
+ map = map.replace(/\[CH|FE|Cherish|Feint\]/g, "[font color=\"885599\"][O][/font]"); //Cherish
+ map = map.replace(/\[JA|James(on)?\]/g, "[font color=\"limegreen\"][O][/font]"); //Jameson
  map = map.replace(/\[SH|Sha(keem)*\]/g, "[font color=\"orange\"][O][/font]"); //Shakeem
  map = map.replace(/\[XN|Xen(neth)*\]/g, "[font color=\"cyan\"][O][/font]"); //Xenneth
  map = map.replace(/\[SA|Sara\]/g, "[font color=\"e67319\"][O][/font]"); // Sara
- map = map.replace(/\[HA|Hado\]/g, "[font color=\"gold\"][O][/font]"); // Sara
+ map = map.replace(/\[HA|Hado\]/g, "[font color=\"gold\"][O][/font]"); // Hado
  //NPCS
- map = map.replace(/\[T|Tenma\]/g, "[font color=\"rose\"][O][/font]"); //Tenma
+ map = map.replace(/\[TM|Tenma\]/g, "[font color=\"rose\"][O][/font]"); //Tenma
  map = map.replace(/\[OR|Orph\]/g, "[font color=\"3a00da\"][O][/font]"); // Orph
- map = map.replace(/\[OR|Orph\]/g, "[font color=\"79C4C3\"][O][/font]"); //Octavius
+ map = map.replace(/\[OC|Oct(avius)?\]/g, "[font color=\"79C4C3\"][O][/font]"); //Octavius
  //Make the map courier new
  map = "[font face=\"courier new\"]" + map + "[/font]"
  document.getElementById("map").value = map;
