@@ -7,6 +7,12 @@ function replaceStuff() {
  map = map.replace(/\[x\]/ig, "[font color=\"grey\"][X][/font]");
  map = map.replace(/\[H\]/g, "[font color=\"red\"][H][/font]");
  map = map.replace(/\[h\]/g, "[font color=\"red\"][h][/font]");
+ map = map.replace(/\[?\]/g, "[font color=\"purple\"][?][/font]");
+ map = map.replace(/\[C\]/g, "[font color=\"885599\"][O][/font]");
+ map = map.replace(/\[J\]/g, "[font color=\"limegreen\"][O][/font]");
+ map = map.replace(/\[T\]/g, "[font color=\"rose\"][O][/font]");
+ map = map.replace(/\[SH\]/g, "[font color=\"orange\"][O][/font]");
+ map = map.replace(/\[X\]/g, "[font color=\"cyan\"][O][/font]");
  map = map.replace(/\[Xen(neth)*\]/ig, )
  map = "[font face=\"courier new\"]" + map + "[/font]"
  document.getElementById("map").value = map;
