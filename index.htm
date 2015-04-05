@@ -21,7 +21,7 @@ function replaceStuff() {
  map = map.replace(/\[WD|=|D\]/ig, "[font color=\"white\"][=][/font]"); // White Door
  map = map.replace(/\[GD|G=\]/ig, "[font color=\"limegreen\"][=][/font]"); // Green Door
  map = map.replace(/\[BD|B=\]/ig, "[font color=\"blue\"][=][/font]"); // Blue Door
- map = map.replace(/\[BP\]/ig, "[font color=\"blue\"][N][/font]"); // Blue Panel
+ map = map.replace(/\[BP|BN\]/ig, "[font color=\"blue\"][N][/font]"); // Blue Panel
  map = map.replace(/\[M|Met(ool)?\]/ig, "[font color=\"gold\"][M][/font]"); // Metool
  map = map.replace(/\[W|UMet(ool)?\]/ig, "[font color=\"red\"][W][/font]"); // Upside Down Metool
  //Folks
@@ -30,6 +30,7 @@ function replaceStuff() {
  map = map.replace(/\[SH|Sha(keem)*\]/g, "[font color=\"orange\"][O][/font]"); //Shakeem
  map = map.replace(/\[XN|Xen(neth)*\]/g, "[font color=\"cyan\"][O][/font]"); //Xenneth
  map = map.replace(/\[SA|Sara\]/g, "[font color=\"e67319\"][O][/font]"); // Sara
+ map = map.replace(/\[H|Hado\]/g, "[font color=\"gold\"][O][/font]"); // Sara
  //NPCS
  map = map.replace(/\[T|Tenma\]/g, "[font color=\"rose\"][O][/font]"); //Tenma
  map = map.replace(/\[OR|Orph\]/g, "[font color=\"3a00da\"][O][/font]"); // Orph
