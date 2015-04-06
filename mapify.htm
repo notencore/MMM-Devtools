@@ -10,7 +10,7 @@
  Programming: Kristian Walker & Josh Smith
 */
 function replaceStuff() {
- var map = document.getElementById("map").value;
+ var map = document.getElementById("input").value;
  //Map objects
  map = map.replace(/\[x\]/ig, "[font color=\"grey\"][X][/font]"); // Wall
  map = map.replace(/\[H\]/g, "[font color=\"red\"][H][/font]"); // Very Armed, Very Dangerous Hostile
@@ -26,7 +26,6 @@ function replaceStuff() {
  map = map.replace(/\[ja(mes(on)?)?\]/ig, "[font color=\"limegreen\"][O][/font]"); //Jameson
  map = map.replace(/\[sh(akeem)?\]/ig, "[font color=\"orange\"][O][/font]"); //Shakeem
  map = map.replace(/\[xe(nneth)?\]/ig, "[font color=\"cyan\"][O][/font]"); //Xenneth
- map = map.replace(/\[(sa(ra)?|nub)\]/ig, "[font color=\"crimson\"][O][/font]"); // Sara
  map = map.replace(/\[ha(do)?\]/ig, "[font color=\"gold\"][O][/font]"); // Hado
  //NPCS
  map = map.replace(/\[te(nma)?\]/ig, "[font color=\"pink\"][O][/font]"); //Tenma
@@ -34,12 +33,14 @@ function replaceStuff() {
  map = map.replace(/\[oc(tavius)?\]/ig, "[font color=\"79C4C3\"][O][/font]"); //Octavius
  //Make the map courier new
  map = "[font face=\"courier new\"]" + map + "[/font]"
- document.getElementById("map").value = map;
+ document.getElementById("output").value = map;
 }
 </script>
 
-<textarea id="map" rows="16" cols="64" style="font-family:courier new">Paste map here</textarea>
+<textarea id="input" rows="16" cols="64" style="font-family:courier new">Paste map here</textarea>
 <button type="button" onclick="replaceStuff()">Mapify!</button>
+<textarea id="output" rows="16" cols="64" style="font-family:courier new">Copy map from here</textarea>
+
 
 </body>
 </html>
